@@ -3,10 +3,7 @@ import { goToAuthor } from "./GoToAuthor";
 import { goToTitle } from "./GoToTitle";
 import App from "../App.css";
 import index from "../index.css";
-const baseLink = "https://www.googleapis.com/books/v1/volumes?q=";
-let searchQuery = "";
-//the artworkid  which is image_id comes from the json weve just used a promise to get
-const constructedLink = baseLink + searchQuery + "intitle";
+
 
 export function Card(props) {
   return (
@@ -33,10 +30,12 @@ export function Card(props) {
         </a>
         <ul>
           {}
+          \\optional out of scope feature
           <a href="./GoToAuthor">
             <li onClick={goToAuthor}>{props.authorName || "Author Name"}</li>
           </a>
           <a href="./GoToTitle">
+           \\optional out of scope feature
             <li onClick={goToTitle}>{props.titleName || "Title Name"}</li>
           </a>
         </ul>

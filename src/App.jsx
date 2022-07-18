@@ -20,7 +20,7 @@ export const App = () => {
       console.log(e);
     } finally {
        setRcvdData([res]);
-      console.log(res)
+      console.log("hello")
     }
   }
 
@@ -32,6 +32,8 @@ export const App = () => {
         <Header />
         <JsonDisplayer />
         <Main />
+                <JsonDisplayer />
+
       </div>
     </div>
   );

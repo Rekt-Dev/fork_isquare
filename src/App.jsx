@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import "./App.css";
 import { Main } from "./components/Main";
 import { Header } from "./components/Header";
+import {JsonDisplayer} from "./components/JsonDisplayer"
 
 export const App = () => {
   const [userSearchQuery, setUserSearchQuery] = useState("");
@@ -29,6 +30,7 @@ export const App = () => {
     <div>
       <div className="">
         <Header />
+        <JsonDisplayer />
         <Main />
       </div>
     </div>
